@@ -67,7 +67,7 @@ export default class extends Controller {
       }
     }
 
-    //if the todo entered by user does not exists than add on the list and show a toast message
+    //if the todo entered by user does not exists then add on the list and show a toast message
     if (doesExists === false) {
       var id = items.reduce((acc, item) => Math.max(acc, item.id), 0) + 1;
       items = items.concat({
