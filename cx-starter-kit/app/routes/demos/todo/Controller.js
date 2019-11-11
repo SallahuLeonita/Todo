@@ -92,6 +92,7 @@ export default class extends Controller {
     this.store.set("$page.todos", items.filter(item => item.id !== id));
   }
 
+  //Click add button when Enter key is pressed
   onEnter() {
    // var input = document.getElementById("addToDo");
     if (event.keyCode == 13) {
