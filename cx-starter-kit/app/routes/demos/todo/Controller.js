@@ -61,7 +61,7 @@ export default class extends Controller {
     //Check if there is already a todo with the same text, if yes then show a toast message...
     var doesExists = false;
     for (let x of arrayText) {
-      if (item == x) {
+      if (item.toLowerCase().trim() == x.toLowerCase().trim()) {
         doesExists = true;
         createToast("Todo already exists", "top", "error");
       }
